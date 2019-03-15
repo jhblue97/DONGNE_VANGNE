@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_rectangle"
+    android:orientation="vertical"
+    tools:context=".board.ListBoardOneActivity"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/board_user_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/board_user_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:gravity="center_vertical"
+            android:text="TextView" />
+
+        <ImageButton
+            android:id="@+id/test"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/navi"/>
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageBoard1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:scaleType="fitCenter" />
+        <ImageView
+            android:id="@+id/imageBoard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:scaleType="fitCenter" />
+        <ImageView
+            android:id="@+id/imageBoard3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/getBoardDetailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/board_btnLike"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/like1"/>
+        <TextView
+            android:id="@+id/board_likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="100"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_view_comment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="10">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/addCommentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="댓글을 입력하세요.." />
+
+        <ImageButton
+            android:id="@+id/addCommentBtn"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
+</LinearLayout>

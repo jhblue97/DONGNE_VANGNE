@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dongne</string>
+    <string name="kakao_app_key">729364ab5ebc57f17f5282a7b2ef779f</string>
+
+    <string name="default_notification_channel_id">Channel ID</string>
+
+    <string name="default_notification_channel_name" translatable="true">Test</string>
+</resources>

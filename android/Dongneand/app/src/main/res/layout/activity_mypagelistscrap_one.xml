@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetUserActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_rectangle">
+
+        <TextView
+            android:id="@+id/boardNo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="넘버"
+            android:textSize="15sp"
+            android:background="@drawable/custom_rectangle"
+            android:backgroundTint="#ffffff"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/boardDetailText"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="게시물디테일내용"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/boardRegDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="게시물날짜"
+            android:textSize="15sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <!-- NEW DISIGN -->
+    <color name="color1">#404040</color>
+    <color name="color2">#B2B2B2</color>
+    <color name="color3">#2A2A2A</color>
+    <color name="color4">#E5E5E5</color>
+    <color name="color5">#F6F6F6</color>
+    <color name="color6">#FFFFFF</color>
+    <color name="color7">#000000</color>
+    <color name="color8">#4A4A4C</color>
+    <color name="color9">#BDD1DC</color>
+    <color name="color10">#FFFF00</color>
+    <color name="color11">#fef01b</color>
+    <color name="H_spoon">#9ebdcc</color>
+    <color name="D_spoon">#ffdf7f</color>
+    <color name="S_spoon1">#ff9a9a</color>
+    <color name="S_spoon2">#8cdc94</color>
+    <color name="G_spoon1">#8fd5f5</color>
+    <color name="G_spoon2">#b79fef</color>
+
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "2794022269",
+    "firebase_url": "https://dongne-2a5d8.firebaseio.com",
+    "project_id": "dongne-2a5d8",
+    "storage_bucket": "dongne-2a5d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2794022269:android:cf551f3b6f7c6a5d",
+        "android_client_info": {
+          "package_name": "example.dongne"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2794022269-84a0uk1gb66dg2eosnvhu43lq1orip6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.dongne",
+            "certificate_hash": "151c99e75d2e2f7b032524a6f9217316e27e158e"
+          }
+        },
+        {
+          "client_id": "2794022269-nnklcstccledgmfbhu99d5egvh1lt9gi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHVTfQpejuxyu7JAucI33ssoCplkvRtI4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2794022269-nnklcstccledgmfbhu99d5egvh1lt9gi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

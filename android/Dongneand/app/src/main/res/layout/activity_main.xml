@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".board.MainActivity"
+    android:background="@drawable/back12"
+    android:scaleType="centerCrop">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_logout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/login7" />
+
+            <ImageButton
+                android:id="@+id/btn_user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/getuser6" />
+
+            <ImageButton
+                android:id="@+id/btn_list_board"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/listboard7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnMyList"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/myboard7" />
+
+            <ImageButton
+                android:id="@+id/btnMyScrap"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrap7" />
+
+            <ImageButton
+                android:id="@+id/btnMyComment"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/comment7" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

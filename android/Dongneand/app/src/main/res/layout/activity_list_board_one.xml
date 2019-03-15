@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_rectangle"
+    android:orientation="vertical"
+    tools:context=".board.ListBoardOneActivity"
+    android:padding="20dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/user_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            android:radius="50dip"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/user_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="TextView" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="3dp"/>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/boardDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btnLike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/like1"/>
+        <TextView
+            android:id="@+id/likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="30dp"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/commentUser"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/textComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
