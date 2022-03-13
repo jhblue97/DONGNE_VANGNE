@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Text-To-Speech Service</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta name="description" content="Text-To-Speech Synthesis">
+		<meta name="keywords" content="TTS, text-to-speech, voice, API, speech, synthesis, html5">
+		<meta name="author" content="Mike Melamed">
+		<meta name="copyright" content="eDeliverables Inc">
+		
+				 
+		<script src="/textSpeech/jquery-1.11.3.min.js"></script>
+		<script src="/textSpeech/algorithmia-0.2.0.js" type="text/javascript"></script>
+		<script src="/textSpeech/speech2.js?ver=0.2" type="text/javascript"></script>
+		
+		<script>
+			var pauseResume = 'R';
+			$(document).ready(function(){		
+				$("#doTTS").click(function() {
+					doTTS();
+					return false;
+				});
+				
+			 
+			});
+			
+			// Initialize speech engine...
+			initSpeech(); 
+		</script>
+	</head>
+	
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>Text-To-Speech</h1>
+				<center>
+					<input type='button' id='doTTS' value='Speak!'/>
+						<!-- <input type='button' id='doLangId' value='LangId'/> -->
+			  	</center>
+			</div>
+		 
+		
+				<textarea class='textareaClass' id='taInput' rows="12" cols="50"></textarea><br/>
+			
+		
+
+	 
+		</div>
+		
+ 
+	</body>
+</html>

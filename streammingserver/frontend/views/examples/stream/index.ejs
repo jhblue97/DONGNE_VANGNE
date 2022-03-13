@@ -1,0 +1,89 @@
+  <link href="/img/logo-webrtc.png" type="image/png" rel="icon">
+      <script src="/js/lib/inherit.js"></script>
+    <script src="/js/lib/jquery.js"></script>
+    <script src="/js/lib/eventemitter.js"></script>
+    <script src="/js/lib/DetectRTC.js"></script>
+    <script src="/js/utils.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+ 
+<script src="js/speech.js"></script> 
+<script type="text/javascript"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+   
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/algorithmia-0.2.0.js" type="text/javascript"></script>
+<script src="js/speech2.js?ver=0.2" type="text/javascript"></script>
+		
+    <script>
+			var pauseResume = 'R';
+			$(document).ready(function(){		
+				$("#doTTS").click(function() {
+					doTTS();
+					return false;
+				}); 
+			});
+			
+			// Initialize speech engine...
+			initSpeech(); 
+		</script> 
+<link href="css/main.css" rel="stylesheet" type="text/css">   
+
+   
+
+    <div class="left-box" id="left-box">  
+<div id="myModal" class="full reveal" data-reveal></div>
+    <%if(url == 'true'){%>  
+   <% include ../last/broadcast %>  
+    <%}else{%>    
+       <% include ../last/index %>  
+       <%}%>    
+<!--<img src="http://192.168.0.12:8080/common/images/stream/spon.gif"" id="test1"> --> 
+<div class="modal" position:relative;>    
+   <div class="modal-content">
+   <span class="close-button">&times;</span>
+   <h3 style="color:black;">여러분의 후원이 큰 힘이 됩니다^^</h3>
+   <a class="money">금액<input type="text" id="price"></input>원   </a>
+   <button type="button" class="btn btn-default" data-dismiss="modal" id="kakaopay">카카오페이</button>
+   <button type="button" class="btn btn-default" data-dismiss="modal" id="inicispay">이니시스페이</button> 
+   </div>
+</div> 
+
+<div id="pannel" style="border-radius:20px;">   
+   <input type="hidden" id="streamer" value="<%=streamer%>"  data-param3="<%=streamer%>"/>
+    <div id="viewlike">
+      <a id="streamViewCount"><img class="streamViewCount" src="http://localhost:8080/common/images/stream/view.png"style="height:40px; width:40px;"><%=streamViewCount%></a>  
+      <a id="streamLikeCount" data-param5="0"><img class="streamLikeCount" src="http://localhost:8080/common/images/stream/heart3.png"style="height:40px; width:40px;"></a>
+      <br/>  
+   </div>  
+   <a id="streamerProfile" data-param="<%=streamerProfile%>"><img src="http://localhost:8080/common/images/profile/<%=streamerProfile%>" style="height:50px; width:50px; border-radius:70px; display:inline; vertical-align:middle"></a>
+   <a id="streamNickname" style="display:inline; font-size:30px;"><%=streamNickname%></a><button class="trigger">후원하기</button>
+   <img src="http://localhost:8080/common/images/stream/circle.png" style="height:20px; width:20px;">OnAir  
+   <div id="streamTitle"><h1><%=streamTitle%></h1></div>  
+   <div id="streamContent"><h3><%=streamContent%></h3></div>    
+</div>   
+
+<div class="right-box">  
+    <!--    <div class="card">  -->
+   <div id="chatLog" class="chat_log" style="overflow-x:hidden; overflow-y:auto;"></div>     
+    <!--  </div> -->  
+   <form id="chat">  
+      <input type="hidden" id="userProfile" value="<%=userProfile%>"/> 
+      <input type="hidden" id="userNo" class="name" type="text" value="<%=userNo%>" data-param="<%=userNo%>"/> 
+      <input id="userName" class="name" type="text" value="<%=userName%>" readonly>
+      <input id="message" class="message" type="text">
+      <input type="submit" class="btn"  value="chat" style="height:44px; background-color:rgba(111, 111, 111, 0.15); border-radius:25px; color:white;"/>
+      <a class="micClass"><img id="mic" data-mic="0" src="http://localhost:8080/common/images/stream/mic2.png" style="height:30px; width:30px;margin-top: 8px;"></a>
+   </form> 
+</div> 
+
+<input type="hidden" id="sponSpeech" value="<%=sponSpeech%>"/> 
+<input type="hidden" id="sponPrice" value="<%=sponPrice%>"/>  
+
+ <script src="/socket.io/socket.io.js"></script>
+<script src="js/modules/peer-handler.js"></script>
+<script src="js/modules/media-handler.js"></script>
+<script src="js/main.js"></script>  
+  

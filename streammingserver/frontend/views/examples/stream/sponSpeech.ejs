@@ -1,0 +1,61 @@
+  <link href="/img/logo-webrtc.png" type="image/png" rel="icon">
+      <script src="/js/lib/inherit.js"></script>
+    <script src="/js/lib/jquery.js"></script>
+    <script src="/js/lib/eventemitter.js"></script>
+    <script src="/js/lib/DetectRTC.js"></script>
+    <script src="/js/utils.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+
+ 
+    <script type="text/javascript"></script>
+   
+    
+    <link href="css/main.css" rel="stylesheet" type="text/css">   
+
+   
+    <div id="streamTitle"><h1><%=streamTitle%></h1></div>  
+    <div id="streamContent"><h3><%=streamContent%></h3></div>  
+    
+<button class="trigger">후원하기^ㅡ^</button> 
+    <div class="modal" position:relative;>    
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+          <h3 style="color:black;">여러분의 후원이 큰 힘이 됩니다^^</h3>
+                 금액<input type="text" id="price"></input>원  
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="kakaopay">카카오페이</button>
+    	<button type="button" class="btn btn-default" data-dismiss="modal" id="naverpay">네이버페이</button>
+    	<button type="button" class="btn btn-default" data-dismiss="modal" id="inicispay">이니시스페이</button> 
+        </div>
+    </div> 
+
+<div class="class=left-box">  
+      <div id="streamer" data-param3="<%=streamer%>"><%=streamer%></div> 
+     <div id="streamNickname"><%=streamNickname%></div>
+     <div id="streamerProfile" data-param="<%=streamerProfile%>"><img src="http://192.168.0.14:8080/common/images/stream/<%=streamerProfile%>" style="height:50px; width:50px;"></div>
+     <div id="streamViewCount"><img class="streamViewCount" src="http://192.168.0.14:8080/common/images/stream/view.png"style="height:40px; width:40px;"><%=streamViewCount%></div>  
+     <div id="streamLikeCount" data-param5="0"><img class="streamLikeCount" src="http://192.168.0.14:8080/common/images/stream/like2.png"style="height:40px; width:40px;"><%=streamLikeCount%></div>  
+  </div>   
+    <div class="right-box">
+    <div class="card"> 
+    <div id="chatLog" class="chat_log"></div>   
+    </div>   
+             <form id="chat">  
+   	  <input type="hidden" id="userProfile" value="<%=userProfile%>"/> 
+      <input type="hidden" id="userNo" class="name" type="text" value="<%=userNo%>" data-param="<%=userNo%>"/> 
+      <input id="userName" class="name" type="text" value="<%=userName%>" readonly>
+      <input id="message" class="message" type="text"><input type="submit" class="chat" value="chat"/>
+   	  <input type="button" id="toggle" value="Stop"><br>
+    </form>  </div> 
+    
+    <input type="hidden" id="sponSpeech" value="<%=sponSpeech%>"/> 
+  <input type="hidden" id="sponPrice" value="<%=sponPrice%>"/>  
+ 
+
+    
+  <script src="/socket.io/socket.io.js"></script>
+<script src="js/modules/peer-handler.js"></script>
+<script src="js/modules/media-handler.js"></script>
+<script src="js/main.js"></script> 
+  

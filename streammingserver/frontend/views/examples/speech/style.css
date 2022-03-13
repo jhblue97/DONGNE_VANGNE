@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+    box-sizing: border-box;
+}
+.container{
+    background-color: lightblue;
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+input[type=text]{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 20px;
+    margin: 10px auto;
+}
+input[type=submit]{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+}
+textarea{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    margin: 10px auto;
+    height: 400px;
+}
